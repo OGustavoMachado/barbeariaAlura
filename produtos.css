@@ -1,0 +1,97 @@
+body {
+  font-family: 'Montserrat', sans-serif; /*Utilizando fonte declarada no html*/
+}
+
+header {
+  background: #bbbbbb; /*Mudando cor de fundo*/
+  padding: 20px 0; /*Espaçamento interno (cima e baixo = 20px) (esquerda e direita = 0)*/
+}
+
+.caixa {
+  position: relative; /*Alterando posicionamento para que "levante" e o posicionamento absolute encaixe dentro*/
+  width: 940px; /*Alterando largura da caixa*/
+  margin: 0 auto; /*Margem externa (cima e baixo = 0) (direita e esquerda = automatica)*/
+}
+nav {
+  position: absolute; /*Alterando o posicionamento para podermos mover o cabeçalho*/
+  top: 110px; /*Alterando posição do topo*/
+  right: 0; /*Alterando posição da direita*/
+}
+
+nav li {
+  display: inline; /*Colocando itens da lista em linha*/
+  margin: 0 0 0 15px; /*Adicionando margem externa (topo/Direita/baixo/esquerda)*/
+}
+
+nav a {
+  text-transform: uppercase; /*Transformando o texto em maiúsculo*/
+  color: black; /*Alterando a cor*/
+  font-weight: bold; /*Colocando fonte em negrito*/
+  font-size: 22px; /*Mudando tamnaho da fonte*/
+  text-decoration: none; /*Tirando sublinhado do link*/
+}
+
+nav a:hover {
+  /*Ação para quando o cursor do mouse estiver em cima do elemento*/
+  color: #c78c19; /*Definindo a cor que aparecerá*/
+  text-decoration: underline; /*Sublinhar elemento*/
+}
+
+.produtos {
+  width: 940px; /*Definindo largura*/
+  margin: 0 auto; /*Defininco espacamento externa (cima/baixo lados)*/
+  padding: 50px 0; /*Definindo espacamento interno (cima/baixo lados)*/
+}
+
+.produtos li:hover {
+  /*Ação para quando o cursor do mouse estiver em cima do elemento*/
+  border-color: #c78c19; /*Alterando a cor da borda*/
+}
+
+.produtos li:active {
+  /*Ação para quando o elemento for clicado*/
+  border-color: #088c19;
+}
+
+.produtos li:hover h2 {
+  /*Alterando o h2 quando o mouse estiver por cima*/
+  font-size: 34px;
+}
+
+.produtos li {
+  display: inline-block; /*Os elementos da lista ocupam o tamanho de seu conteudo podendo alterar o tamanho da largura*/
+  text-align: center; /*Centralizando conteúdo*/
+  width: 30%; /*Definindo largura ocupada pelos elementos*/
+  vertical-align: top; /*Orientando objetos a se alinhar pela linha superior*/
+  margin: 0 1.5%; /*Definindo espacamento externo dos elementos (cima/baixo lados)*/
+  padding: 30px 20px; /*Definindo espacamento interno (cima/baixo lados)*/
+  box-sizing: border-box; /*Definindo que a largura (width) será a total, independente dos espacamentos*/
+  border: 2px solid #000000; /*Definindo borda (largura estilo cor)*/
+  border-radius: 10px; /*Arredondando cantos da borda*/
+}
+
+.produtos h2 {
+  font-size: 30px; /*Definindo tamanho da fonte*/
+  font-weight: bold; /*Colocando fonte em negrito*/
+}
+
+.descricaoProduto {
+  font-size: 18px; /*Definindo tamanho da fonte*/
+}
+
+.precoProduto {
+  font-size: 22px; /*Definindo tamanho da fonte*/
+  font-weight: bold; /*Colocando fonte em negrito*/
+  margin-top: 10px; /*Definindo espacamento externo superior*/
+}
+
+footer {
+  text-align: center; /*Centralizando conteúdo*/
+  background: url('img/bg.jpg'); /*Adicionando imagem de fundo*/
+  padding: 40px 0; /*Espacamento interno (cima/baixo lados)*/
+}
+.copyright {
+  color: #ffffff; /*Alterando cor do texto*/
+  font-size: 13px; /*Definindo tamanho da fonte*/
+  margin-top: 20px; /*Definindo espacamento externo superior*/
+}

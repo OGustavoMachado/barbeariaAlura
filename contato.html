@@ -1,0 +1,184 @@
+<!--ESTRUTURA BÁSICA-->
+<!DOCTYPE html>
+<!--LANG = Idioma do site-->
+<html lang="pt-br">
+  <!--head = Informações que o navegador recebe-->
+  <head>
+    <!--charset = escolhendo dicionario para acentos-->
+    <meta charset="UTF-8" />
+    <!--Titulo do Site-->
+    <title>Contato - Barbearia Alura</title>
+    <!--Aplicando o reset CSS-->
+    <link rel="stylesheet" href="reset.css" />
+    <!--Fazendo refêrencia ao arquivo CSS externo-->
+    <link rel="stylesheet" href="contato.css" />
+    <!--Importando fonte de texto da web-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <!--body = Conteúdo exibido na tela-->
+  <body>
+    <!--Tag para cabeçalho-->
+    <header>
+      <!--Criando uma divisão na página-->
+      <div class="caixa">
+        <!--h1 = Titulo principal // img = adicionar imagem / src = localizar arquivo / alt = descrição img-->
+        <h1><img src="img/logo.png" alt="Logo da Barbearia Alura" /></h1>
+        <!-- Tag para navegação-->
+        <nav>
+          <!--Criando lista ordenada-->
+          <ul>
+            <!--li = Adicionando itens na lista // a = Criando link -->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!--Tag para conteúdo principal-->
+    <main>
+      <!-- Tag para formulário-->
+      <form>
+        <!--Tag para informação da entrada de dados-->
+        <label for="nomeSobrenome">Nome e Sobrenome</label>
+        <!--Tag para entrada de dados do usuario // required = obrigatório-->
+        <input type="text" id="nomeSobrenome" class="inputPadrao" required />
+
+        <!--Tag para informação da entrada de dados-->
+        <label for="email">Email</label>
+        <!--Tag para entrada de dados do usuario // required = obrigatório // placeholder = "Sugestão" que aparecerá no formulário-->
+        <input
+          type="email"
+          id="email"
+          class="inputPadrao"
+          required
+          placeholder="seuEmail@dominio.com"
+        />
+
+        <!--Tag para informação da entrada de dados-->
+        <label for="telefone">Telefone</label>
+        <!--Tag para entrada de dados do usuario // required = obrigatório // placeholder = "Sugestão" que aparecerá no formulário-->
+        <input
+          type="tel"
+          id="telefone"
+          class="inputPadrao"
+          required
+          placeholder="(XX) XXXXX - XXXX"
+        />
+
+        <!--Tag para informação da entrada de dados-->
+        <label for="mensagem">Mensagem</label>
+        <!--Tag para usuário adicionar texto livre // cols = colunas rows = linhas-->
+        <textarea
+          cols="70"
+          rows="10"
+          id="mensagem"
+          class="inputPadrao"
+          required
+        ></textarea>
+
+        <!--Tag usada quando há o preechimento de um ou mais campos destinados a um assunto específico (dados de cartão de crédito/endereço)-->
+        <fieldset>
+          <!--Tag titulo de um fieldset-->
+          <legend>Como prefere o nosso contato?</legend>
+
+          <!--Tag para informação da entrada de dados // Tag para entrada de dados do usuario // radio = checkbox-->
+          <label for="radioEmailUsuario"
+            ><input
+              type="radio"
+              name="contato"
+              value="email"
+              id="radioEmailUsuario"
+            />Email</label
+          >
+
+          <!--Tag para informação da entrada de dados // Tag para entrada de dados do usuario // radio = checkbox-->
+          <label for="radioTelefone"
+            ><input
+              type="radio"
+              name="contato"
+              value="telefone"
+              id="radioTelefone"
+            />Telefone</label
+          >
+
+          <!--Tag para informação da entrada de dados // Tag para entrada de dados do usuario // radio = checkbox // checked = deixa a opção marcada-->
+          <label for="radioWhatsapp"
+            ><input
+              type="radio"
+              name="contato"
+              value="whatsapp"
+              id="radioWhatsapp"
+              checked
+            />Whatsapp</label
+          >
+        </fieldset>
+
+        <!--Tag usada quando há o preechimento de um ou mais campos destinados a um assunto específico (dados de cartão de crédito/endereço)-->
+        <fieldset>
+          <!--Tag titulo de um fieldset-->
+          <legend>Qual horário prefere ser atendido?</legend>
+
+          <!--Tag para seletor // Option = Opções que aparecerão na caixa-->
+          <select>
+            <option>Manhã</option>
+            <option>Tarde</option>
+            <option>Noite</option>
+          </select>
+        </fieldset>
+
+        <!--Tag para informação da entrada de dados // Adicionando checkbox // checked = deixa a opção marcada -->
+        <label class="checkbox"
+          ><input type="checkbox" checked />Gostaria de receber nossas novidades
+          por Email?</label
+        >
+
+        <!--Tag para adicionar botão de enviar-->
+        <input type="submit" value="Enviar formulário" class="enviar" />
+      </form>
+
+      <!--Tag para criação de tabela-->
+      <table>
+        <!--Tag para cabecalho da tabela-->
+        <thead>
+          <!--Tag para criação de linha-->
+          <tr>
+            <!--Tag para criação de coluna do cabecalho-->
+            <th>Dia</th>
+            <th>Horário</th>
+          </tr>
+        </thead>
+        <!--Tag para corpo da tabela-->
+        <tbody>
+          <tr>
+            <!--Tag para criação de coluna-->
+            <td>Segunda</td>
+            <td>8h - 20h</td>
+          </tr>
+          <tr>
+            <!--Tag para criação de coluna-->
+            <td>Quarta</td>
+            <td>8h - 20h</td>
+          </tr>
+          <tr>
+            <!--Tag para criação de coluna-->
+            <td>Sexta</td>
+            <td>8h - 20h</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+    <!--Tag para cabecalho-->
+    <footer>
+      <!--Adicionando imagem-->
+      <img src="img/logo-branco.png" alt="Logo da Barbearia Alura" />
+      <!--Adicionando paragráfo-->
+      <!--&copy = simbolo copyright-->
+      <p class="copyright">&copy; Copyright Barbearia Alura - 2019</p>
+      "
+    </footer>
+  </body>
+</html>

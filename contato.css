@@ -1,0 +1,111 @@
+body {
+  font-family: 'Montserrat', sans-serif; /*Utilizando fonte declarada no html*/
+}
+
+header {
+  background: #bbbbbb; /*Mudando cor de fundo*/
+  padding: 20px 0; /*Espaçamento interno (cima e baixo = 20px) (esquerda e direita = 0)*/
+}
+
+.caixa {
+  position: relative; /*Alterando posicionamento para que "levante" e o posicionamento absolute encaixe dentro*/
+  width: 940px; /*Alterando largura da caixa*/
+  margin: 0 auto; /*Margem externa (cima e baixo = 0) (direita e esquerda = automatica)*/
+}
+nav {
+  position: absolute; /*Alterando o posicionamento para podermos mover o cabeçalho*/
+  top: 110px; /*Alterando posição do topo*/
+  right: 0; /*Alterando posição da direita*/
+}
+
+nav li {
+  display: inline; /*Colocando itens da lista em linha*/
+  margin: 0 0 0 15px; /*Adicionando margem externa (topo/Direita/baixo/esquerda)*/
+}
+
+nav a {
+  text-transform: uppercase; /*Transformando o texto em maiúsculo*/
+  color: black; /*Alterando a cor*/
+  font-weight: bold; /*Colocando fonte em negrito*/
+  font-size: 22px; /*Mudando tamnaho da fonte*/
+  text-decoration: none; /*Tirando sublinhado do link*/
+}
+
+nav a:hover {
+  /*Ação para quando o cursor do mouse estiver em cima do elemento*/
+  color: #c78c19; /*Definindo a cor que aparecerá*/
+  text-decoration: underline; /*Sublinhar elemento*/
+}
+
+main {
+  width: 940px; /*Definindo largura do conteúdo*/
+  margin: 0 auto; /*Definindo espacamento externo (cima/baixo lados)*/
+}
+
+form {
+  margin: 40px 0; /*Definindo espacamento externo (cima/baixo lados)*/
+}
+
+form label,
+form legend {
+  display: block; /*Definindo que o elemento ocupará 100% da sua largura*/
+  font-size: 20px; /*Definindo tamanho da fonte*/
+  margin: 0 0 10px; /*Definindo espacamento externo inferior (cima direita baixo esquerda)*/
+}
+
+.inputPadrao {
+  display: block; /*Definindo que o elemento ocupará 100% da sua largura*/
+  margin: 0 0 20px; /*Definindo espacamento externo inferior (cima direita baixo esquerda)*/
+  padding: 10px 25px; /*Definindo espacamento interno (cima/baixo lados)*/
+  width: 50%; /*Definindo largura*/
+}
+
+.checkbox {
+  margin: 20px 0; /*Espacamento externo (cima/baixo lados)*/
+}
+
+.enviar {
+  width: 40%; /*Definindo largura que ocupará na página*/
+  padding: 15px 0; /*Definindo espacamento interno (cima/baixo lados)*/
+  background: orange; /*Definindo cor de fundo*/
+  color: white; /*Definindo cor da fonte*/
+  font-weight: bold; /*Colocando fonte em negrito*/
+  font-size: 18px; /*Definindo tamanho da fonte*/
+  border: none; /*Removendo borda*/
+  border-radius: 5px; /*Arredondando borda*/
+}
+
+/*Ações pra quando o cursor estiver sobre o elemento*/
+.enviar:hover {
+  transition: 1s all; /*Definindo que a transição dos elementos acontecerão em 1s*/
+  background: darkorange; /*Definindo cor de fundo*/
+  cursor: pointer; /*Altera o cursos para "mãozinha*/
+  transform: scale(1.2); /*Aumentando elemento em 20%*/
+}
+
+table {
+  margin: 20px 0 40px; /*Espacamento externo (cima direita baixo)*/
+}
+
+thead {
+  background: #555555; /*Definindo cor de fundo*/
+  color: white; /*Definindo cor do elemento*/
+  font-weight: bold; /*Colocando fonte em negrito*/
+}
+
+td,
+th {
+  border: 1px solid black; /*Definindo borda (largura estilo cor)*/
+  padding: 8px 15px; /*Definindo espacamento interno (cima/baixo lados)*/
+}
+
+footer {
+  text-align: center; /*Centralizando conteúdo*/
+  background: url('img/bg.jpg'); /*Adicionando imagem de fundo*/
+  padding: 40px 0; /*Espacamento interno (cima/baixo lados)*/
+}
+.copyright {
+  color: #ffffff; /*Alterando cor do texto*/
+  font-size: 13px; /*Definindo tamanho da fonte*/
+  margin-top: 20px; /*Definindo espacamento externo superior*/
+}

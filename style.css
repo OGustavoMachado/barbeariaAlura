@@ -1,0 +1,171 @@
+body {
+  font-family: 'Montserrat', sans-serif; /*Utilizando fonte declarada no html*/
+}
+
+header {
+  background: #bbbbbb; /*Mudando cor de fundo*/
+  padding: 20px 0; /*Espaçamento interno (cima e baixo = 20px) (esquerda e direita = 0)*/
+}
+
+.caixa {
+  background: #bbbbbb;
+  position: relative; /*Alterando posicionamento para que "levante" e o posicionamento absolute encaixe dentro*/
+  width: 940px; /*Alterando largura da caixa*/
+  margin: 0 auto; /*Margem externa (cima e baixo = 0) (direita e esquerda = automatica)*/
+}
+nav {
+  position: absolute; /*Alterando o posicionamento para podermos mover o cabeçalho*/
+  top: 110px; /*Alterando posição do topo*/
+  right: 0; /*Alterando posição da direita*/
+}
+
+nav li {
+  display: inline; /*Colocando itens da lista em linha*/
+  margin: 0 0 0 15px; /*Adicionando margem externa (topo/Direita/baixo/esquerda)*/
+}
+
+nav a {
+  text-transform: uppercase; /*Transformando o texto em maiúsculo*/
+  color: black; /*Alterando a cor*/
+  font-weight: bold; /*Colocando fonte em negrito*/
+  font-size: 22px; /*Mudando tamnaho da fonte*/
+  text-decoration: none; /*Tirando sublinhado do link*/
+}
+
+/*Enquanto o cursor estiver sobre o elemento*/
+nav a:hover {
+  color: #c78c19; /*Definindo a cor que aparecerá*/
+  text-decoration: underline; /*Sublinhar elemento*/
+}
+
+/*. para selecionar uma classe*/
+.banner {
+  width: 100%; /*largura que o elemento vai ocupar na página*/
+}
+
+/*Chamando a classe*/
+.tituloPrincipal {
+  text-align: center; /*centralizando texto*/
+  font-size: 2em; /*Alterando tamanho da fonte (2em = 2x maior que a fonte base)*/
+  margin: 0 0 1em; /*Definindo espacamento externo (cima direita baixo) (1em = tamanho do padrão de fonte)*/
+  clear: left; /*"limpa" o float para que elementos não fiquem juntos*/
+}
+
+.principal {
+  padding: 3em 0; /*Definindo espacamento interno (cima/baixo lados) (3em = 3x o tamanho da fonte padrão)*/
+  background: #FEFEFE; /*Definindo cor de fundo*/
+  width: 940px; /*Definindo largura do conteúdo*/
+  margin: 0 auto; /*Definindo espacamento externo (cima/baixo lados)*/
+}
+
+.principal p {
+  margin: 0 0 1em; /*Definindo espacamento externo (cima direita baixo) (1em = tamanho do padrão de fonte)*/
+}
+
+.principal strong {
+  font-weight: bold; /*Colocando texto em negrito*/
+}
+
+.principal em {
+  font-style: italic; /*Colocando fonte em italico*/
+}
+
+.utensilios {
+  width: 120px; /*Definindo largura ocupada pelo elemento*/
+  float: left; /*Fazendo elemento "subir" e os outros contornarem*/
+  margin: 0 20px 20px 0; /*Definindo espacamento externo (cima direita baixo esquerda)*/
+}
+
+.mapa {
+  padding: 3em 0; /*Definindo espacamento interno (cima/baixo lados) (3em = 3x o tamanho da fonte padrão)*/
+  background: linear-gradient(#fefefe, #888888); /*Criando degradê indo do branco ao cinza*/
+}
+
+.mapaConteudo {
+  width: 940px; /*Definindo largura do conteúdo*/
+  margin: 0 auto; /*Definindo espacamento externo (cima/baixo lados)*/
+}
+
+.mapa p {
+  margin: 0 0 2em; /*Definindo espacamento inferior (cima direita baixo) (2em = 2x o tamanho da fonte padrão)*/
+  text-align: center; /*Centralizando texto*/
+}
+
+.beneficios {
+  padding: 3em 0; /*Definindo espacamento interno (cima/baixo lados) (3em = 3x o tamanho da fonte padrão)*/
+  background: #888888; /*Definindo cor de fundo*/
+  
+}
+
+.conteudoBeneficios {
+  width: 640px; /*Alterando largura ocupada pelo elemento*/
+  margin: 0 auto; /*Definindo espacamento externo (cima/baixo lados)*/
+}
+
+.listaBeneficios {
+  width: 40%; /*Alterando largura ocupada pelo elemento*/
+  display: inline-block; /*Alterando display para conteudo ocupar somente seu espaco*/
+  vertical-align: top; /*Alinhando lista pela parte superior*/
+}
+
+.itens {
+  line-height: 1.5; /*Definindo altura da linha*/
+}
+
+/*Marcando apenas o primeiro elemento da lista*/
+.itens:first-child {
+font-weight: bold; /*Colocando fonte em negrito*/
+}
+
+
+/*Adicionando item antes do conteúdo*/
+.itens:before {
+  content: "🟊"; /*"conter*/
+}
+
+.imgBeneficios {
+  width: 60%; /*Definindo largura ocupada pelo elemento*/
+  opacity: 1; /*Define brilho do elemento (1= 100%)*/
+  transition: 400ms; /*Tempo de transformação*/
+  box-shadow: 10px 10px 5px #000000; /*Adicionando sombra ao elemento (eixo x eixo y transformacao de solido para transparente cor)*/
+}
+
+/*Ação quando o mouse estiver sobre o elemento*/
+.imgBeneficios:hover {
+  opacity: 0.3; /*Define brilho do elemento (0,3 = 30%)*/
+}
+
+.video {
+  width: 560px; /*Definindo largura ocupada*/
+  margin: 2em auto; /*Definindo espacamento externo (cima/baixo lados)*/
+}
+
+footer {
+  text-align: center; /*Centralizando conteúdo*/
+  background: url(img/bg.jpg); /*Adicionando imagem ao fundo*/
+  padding: 40px 0; /*Espacamento interno (cima/baixo lados)*/
+}
+
+.copyright {
+  color: #ffffff; /*Alterando cor do texto*/
+  font-size: 13px; /*Definindo tamanho da fonte*/
+  margin-top: 20px; /*Definindo espacamento externo superior*/
+}
+
+@media screen and (max-width: 480px) {
+  .caixa, .principal, .conteudoBeneficios, .mapaConteudo, .video {
+    width: auto;
+  }
+
+  h1{
+    text-align: center;
+  }
+
+  nav {
+    position: static
+  }
+
+  .listaBeneficios, .imgBeneficios {
+    width: 100%;
+  }
+}

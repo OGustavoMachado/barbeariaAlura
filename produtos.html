@@ -1,0 +1,83 @@
+<!--ESTRUTURA BÁSICA-->
+<!DOCTYPE html>
+<!--Lang = idioma do site-->
+<html lang="pt-br">
+  <!--Informações que o servidor recebe-->
+  <head>
+    <!--charset = dicionário com caracteres-->
+    <meta charset="UTF-8" />
+    <!-- título do site-->
+    <title>Produtos - Barbearia Alura</title>
+    <!--Aplicando o reset CSS-->
+    <link rel="stylesheet" href="reset.css" />
+    <!--Fazendo refêrencia ao arquivo CSS externo-->
+    <link rel="stylesheet" href="produtos.css" />
+    <!--Importando fonte de texto da web-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <!--Informações que aparecerão na tela-->
+  <body>
+    <!--Tag para cabeçalho-->
+    <header>
+      <!--Criando uma divisão na página-->
+      <div class="caixa">
+        <!--h1 = Titulo principal // img = adicionar imagem / src = localizar arquivo / alt = descrição img-->
+        <h1><img src="img/logo.png" alt="Logo Alura" /></h1>
+        <!-- Tag para navegação-->
+        <nav>
+          <!--Criando lista desordenada-->
+          <ul>
+            <!--li = Adicionando itens na lista // a = Criando link -->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!--Tag para conteúdo principal-->
+    <main>
+      <!--Criando lista desordenada-->
+      <ul class="produtos">
+        <!--li = Adicionando itens na lista // h2 = Titulo secundário-->
+        <li>
+          <h2>Cabelo</h2>
+          <!--Adicionando imagem-->
+          <img src="img/cabelo.jpg" alt="" />
+          <!--Tag para parágrafo-->
+          <p class="descricaoProduto">
+            Na tesoura ou máquina, como o cliente preferir
+          </p>
+          <p class="precoProduto">R$25,00</p>
+        </li>
+        <li>
+          <h2>Barba</h2>
+          <!--Adicionando imagem-->
+          <img src="img/barba.jpg" alt="" />
+          <!--Tag para parágrafo-->
+          <p class="descricaoProduto">Corte e desenho profissional de barba</p>
+          <p class="precoProduto">R$18,00</p>
+        </li>
+        <li>
+          <h2>Cabelo + Barba</h2>
+          <!--Adicionando imagem-->
+          <img src="img/cabelo+barba.jpg" alt="" />
+          <!--Tag para parágrafo-->
+          <p class="descricaoProduto">Pacote completo de cabelo e barba</p>
+          <p class="precoProduto">R$35,00</p>
+        </li>
+      </ul>
+    </main>
+    <!--Tag para rodapé-->
+    <footer>
+      <!--Adicionando imagem-->
+      <img src="img/logo-branco.png" alt="" />
+      <!--Tag para paragráfo-->
+      <!--&copy = simbolo do copyright-->
+      <p class="copyright">&copy; Copyright Barbearia Alura - 2019</p>
+    </footer>
+  </body>
+</html>
